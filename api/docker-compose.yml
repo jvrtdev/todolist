@@ -1,0 +1,34 @@
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: petronet
+      POSTGRES_PASSWORD: petronet
+      POSTGRES_DB: todolist
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: nestjs-api
+  #   ports:
+  #     - '3001:3001'
+  #   depends_on:
+  #     - postgres
+
+  #   networks:
+  #     - app-network
+
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  postgres_data:
