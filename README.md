@@ -43,7 +43,7 @@ Este projeto é um sistema de gerenciamento de tarefas que utiliza **NestJS** no
 
    ```bash
    git clone <url-do-repositorio>
-   cd tasks-backend
+   cd api
    ```
 
 2. Instale as dependências:
@@ -51,6 +51,21 @@ Este projeto é um sistema de gerenciamento de tarefas que utiliza **NestJS** no
    ```bash
    npm install
    ```
+3. Configure o banco de dados com Docker Compose:
+
+   Crie e suba o container do PostgreSQL:
+
+   ```bash
+   docker compose up -d
+   ```
+
+   Certifique-se de que o banco de dados está acessível em localhost:5432 com as seguintes credenciais:
+
+   Usuário: petronet
+
+   Senha: petronet
+
+   Banco de Dados: todolist
 
 3. Inicie o servidor:
 
@@ -65,7 +80,7 @@ O servidor estará rodando em `http://localhost:3001`.
 1. Navegue para a pasta do frontend:
 
    ```bash
-   cd tasks-frontend
+   cd todolist
    ```
 
 2. Instale as dependências:
