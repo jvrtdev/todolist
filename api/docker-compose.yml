@@ -24,7 +24,7 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgresql://petronet:37LnopSdH35imauBaaT8kmRNzsFoOzQT@dpg-cu3rleogph6c738gq4pg-a.oregon-postgres.render.com/petronect
+      DATABASE_URL: postgresql://petronect:37LnopSdH35imauBaaT8kmRNzsFoOzQT@dpg-cu3rleogph6c738gq4pg-a.oregon-postgres.render.com/petronect
       
 
     networks:
