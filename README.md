@@ -2,6 +2,11 @@
 
 Este projeto é um sistema de gerenciamento de tarefas que utiliza **NestJS** no backend e **Next.js** no frontend. Ele integra WebSockets para atualizações em tempo real e utiliza o TanStack Query para gerenciamento de estado no frontend.
 
+Link da hospedagem do Backend no Render: https://todolist-8x18.onrender.com
+Link da hospedagem do Frontend na Vercel: https://todolist-e7cf8xjmc-joao-s-projects.vercel.app
+
+
+
 ---
 
 ## **Funcionalidades**
@@ -112,7 +117,7 @@ O frontend estará rodando em `http://localhost:3000`.
 
 ## **Endpoints da API**
 
-Documentação com Swagger no Endpoint `http://localhost:3001/api`
+Documentação com Swagger no Endpoint `https://todolist-8x18.onrender.com/api`
 
 
 ### **Base URL**: `http://localhost:3001/task`
