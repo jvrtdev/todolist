@@ -8,7 +8,7 @@ export default function useWebSocketTask() {
   const queryClient = useQueryClient()
 
   useEffect(() => {
-    const socket = io(process.env.WS_URL ?? 'http://localhost:3001')
+    const socket = io(process.env.API_URL ?? 'https://todolist-8x18.onrender.com')
 
     socket.on("taskEvent", (payload) => {
       const { action, data } = payload

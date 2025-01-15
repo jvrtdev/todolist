@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'http://localhost:3001',
+  baseURL: process.env.API_URL ?? 'https://todolist-8x18.onrender.com',
 })
