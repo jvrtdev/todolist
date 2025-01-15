@@ -19,7 +19,8 @@ Este projeto é um sistema de gerenciamento de tarefas que utiliza **NestJS** no
 
 - **NestJS**: Framework Node.js para construção de aplicações escaláveis.
 - **WebSocket (Socket.IO)**: Para comunicação em tempo real.
-
+- **Prisma**: Para mapeamento do banco de dados
+- **PostgreSQL**: Banco de dados relacional
 ### **Frontend**
 
 - **Next.js 15**: Para construção da aplicação cliente.
