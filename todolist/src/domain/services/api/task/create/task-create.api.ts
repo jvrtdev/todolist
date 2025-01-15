@@ -3,7 +3,7 @@ import { api } from "../../api"
 import { toast } from "sonner"
 import { TaskProps } from "@/domain/@types/task"
 
-export const createTask = async (data: Pick<TaskProps, 'title' | 'description'>) => {
+export const createTask = async (data: Pick<TaskProps, 'title'>) => {
   await api.post('/task', data)
 }
 
