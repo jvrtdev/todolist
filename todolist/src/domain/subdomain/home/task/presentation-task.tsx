@@ -16,8 +16,6 @@ export default function PresentationTask({
   id,
   title,
   status,
-  createdAt,
-  updatedAt,
 }: TaskProps) {
   const { mutate: deleteMutate } = useDeleteTask()
   const { mutate: updateMutate } = useUpdateTask()
