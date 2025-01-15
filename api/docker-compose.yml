@@ -14,18 +14,18 @@ services:
     networks:
       - app-network
 
-  # api:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   container_name: nestjs-api
-  #   ports:
-  #     - '3001:3001'
-  #   depends_on:
-  #     - postgres
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nestjs-api
+    ports:
+      - '3001:3001'
+    depends_on:
+      - postgres
 
-  #   networks:
-  #     - app-network
+    networks:
+      - app-network
 
 networks:
   app-network:
