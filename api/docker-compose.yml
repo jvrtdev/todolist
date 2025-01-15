@@ -5,9 +5,9 @@ services:
     ports:
       - '5432:5432'
     environment:
-      POSTGRES_USER: petronet
-      POSTGRES_PASSWORD: petronet
-      POSTGRES_DB: todolist
+      POSTGRES_USER: petronect
+      POSTGRES_PASSWORD: 37LnopSdH35imauBaaT8kmRNzsFoOzQT
+      POSTGRES_DB: petronect
 
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -23,6 +23,9 @@ services:
       - '3001:3001'
     depends_on:
       - postgres
+    environment:
+      DATABASE_URL: postgresql://petronet:37LnopSdH35imauBaaT8kmRNzsFoOzQT@dpg-cu3rleogph6c738gq4pg-a.oregon-postgres.render.com/petronect
+      
 
     networks:
       - app-network
