@@ -2,26 +2,20 @@ import { TaskProps } from "@/domain/@types/task"
 import useDeleteTask from "@/domain/services/api/task/delete/task-delete.api"
 import useUpdateTask from "@/domain/services/api/task/update/task-update.api"
 import { Modal } from "@/domain/shared/components/modal"
-import { Button } from "@/domain/shared/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
 } from "@/domain/shared/components/ui/card"
 import { Checkbox } from "@/domain/shared/components/ui/checkbox"
 import { Input } from "@/domain/shared/components/ui/input"
 import { Label } from "@/domain/shared/components/ui/label"
-import { EditIcon, MenuIcon, Trash, TrashIcon } from "lucide-react"
+import { EditIcon, TrashIcon } from "lucide-react"
 import { useState } from "react"
 
 export default function PresentationTask({
   id,
   title,
-  description,
   status,
-  priority,
   createdAt,
   updatedAt,
 }: TaskProps) {

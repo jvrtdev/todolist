@@ -1,7 +1,7 @@
 import { TaskProps } from "@/domain/@types/task"
 import { api } from "../../api"
 import { toast } from "sonner"
-import { useMutation, useQueryClient } from "@tanstack/react-query"
+import { useMutation } from "@tanstack/react-query"
 
 
 export const updateTask = async (data: Partial<TaskProps>) => {
@@ -9,12 +9,10 @@ export const updateTask = async (data: Partial<TaskProps>) => {
 }
 
 export default function useUpdateTask() {
-  const queryClient = useQueryClient()
   return useMutation({
     mutationFn: updateTask,
     onSuccess: () => {
       toast.success("Tarefa atualizada com sucesso")
-      //queryClient.invalidateQueries({ queryKey: ["tasks"] })
     },
     onError: (error) => {
       toast.error("Ops! Erro ao atualizar a tarefa")

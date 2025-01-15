@@ -1,14 +1,11 @@
 import { ModalContentProps } from "@/domain/@types/modal/modal-content"
-import { Button } from "../ui/button"
 import {
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "../ui/dialog"
-import { Input } from "../ui/input"
-import { Label } from "../ui/label"
+
 
 export function ModalContent({
   title,

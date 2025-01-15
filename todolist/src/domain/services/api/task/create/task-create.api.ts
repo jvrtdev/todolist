@@ -1,4 +1,4 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query"
+import { useMutation } from "@tanstack/react-query"
 import { api } from "../../api"
 import { toast } from "sonner"
 import { TaskProps } from "@/domain/@types/task"
@@ -8,14 +8,10 @@ export const createTask = async (data: Pick<TaskProps, 'title' | 'description'>)
 }
 
 export default function useCreateTask() {
-  const queryClient = useQueryClient();
   return useMutation({
     mutationFn: createTask,
     onSuccess: () => {
-      toast.success("Tarefa criada com sucesso", {
-
-      })
-      //queryClient.invalidateQueries({ queryKey: ["tasks"] })
+      toast.success("Tarefa criada com sucesso")
     },
     onError: (error) => {
       toast.error("Você já tem uma tarefa com esse nome")

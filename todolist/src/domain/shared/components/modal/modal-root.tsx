@@ -1,10 +1,6 @@
 import { ModalRootProps } from "@/domain/@types/modal/modal-root"
 import {
   Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "../ui/dialog"
 
